@@ -1,0 +1,67 @@
+[
+ {
+  "desk_access": 1,
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Role",
+  "home_page": null,
+  "is_custom": 0,
+  "modified": "2026-10-05 16:18:14.955751",
+  "name": "Ecofinit Procurement User",
+  "restrict_to_domain": null,
+  "role_name": "Ecofinit Procurement User",
+  "two_factor_auth": 0
+ },
+ {
+  "desk_access": 1,
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Role",
+  "home_page": null,
+  "is_custom": 0,
+  "modified": "2026-10-05 16:18:32.372071",
+  "name": "Ecofinit Sales User",
+  "restrict_to_domain": null,
+  "role_name": "Ecofinit Sales User",
+  "two_factor_auth": 0
+ },
+ {
+  "desk_access": 1,
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Role",
+  "home_page": null,
+  "is_custom": 0,
+  "modified": "2026-10-05 16:18:48.787584",
+  "name": "Sales Value Approver",
+  "restrict_to_domain": null,
+  "role_name": "Sales Value Approver",
+  "two_factor_auth": 0
+ },
+ {
+  "desk_access": 1,
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Role",
+  "home_page": null,
+  "is_custom": 0,
+  "modified": "2026-10-05 16:19:09.963409",
+  "name": "Metal Green Inventory User",
+  "restrict_to_domain": null,
+  "role_name": "Metal Green Inventory User",
+  "two_factor_auth": 0
+ },
+ {
+  "desk_access": 1,
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Role",
+  "home_page": null,
+  "is_custom": 0,
+  "modified": "2026-10-05 16:19:22.608348",
+  "name": "Intercompany Manager",
+  "restrict_to_domain": null,
+  "role_name": "Intercompany Manager",
+  "two_factor_auth": 0
+ }
+]

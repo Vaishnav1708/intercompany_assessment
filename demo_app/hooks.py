@@ -137,13 +137,16 @@ app_license = "mit"
 # ---------------
 # Hook on document methods and events
 
-# doc_events = {
+doc_events = {
 # 	"*": {
 # 		"on_update": "method",
 # 		"on_cancel": "method",
 # 		"on_trash": "method"
 # 	}
-# }
+    "Sales Invoice": {
+        "validate": "demo_app.events.sales_invoice.validate_intercompany_sales_invoice"
+    }
+}
 
 # Scheduled Tasks
 # ---------------
@@ -241,4 +244,38 @@ app_license = "mit"
 # default_log_clearing_doctypes = {
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
+
+
+fixtures = [
+    {
+        "dt": "Custom Field",
+        "filters": [
+            ["name", "in", ["Sales Invoice-custom_sales_value_confirmation"]]
+        ]
+    },
+    {
+        "dt": "Workflow",
+        "filters": [
+            ["workflow_name", "=", "Sales Value Confirmation Approval"]
+        ]
+    },
+    {
+        "dt": "Workflow State",
+        "filters": [
+            ["name", "in", ["Draft", "Pending", "Approved", "Rejected"]]
+        ]
+    },
+    {
+        "dt": "Role",
+        "filters": [
+            ["name", "in", [
+                "Ecofinit Procurement User",
+                "Ecofinit Sales User",
+                "Sales Value Approver",
+                "Metal Green Inventory User",
+                "Intercompany Manager"
+            ]]
+        ]
+    }
+]
 
